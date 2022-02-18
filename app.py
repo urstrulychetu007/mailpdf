@@ -20,11 +20,11 @@ def open():
 @app.route('/<url>/<email>')
 def index(url,email):
      msg = Message(
-                'Hello',
+                'Hello user',
                 sender ='kletechseed_data@kletech.ac.in',
                 recipients = [email]
                )
-     msg.body = 'Hello Flask message sent from Flask-Mail'
+     msg.body = 'Your consent has been attached with this mail.'
      response = urllib.request.urlopen("http://10.2.0.23/uploads/Consents/"+url+".pdf")
      
      msg.attach(url+".pdf", "application/pdf", response.read()) 
