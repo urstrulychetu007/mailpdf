@@ -33,4 +33,4 @@ def index(url,email):
 
 
 if __name__ == '__main__':
-    app.run()_01fe19bcs125@kletech.ac.in1659619579164/01fe19bcs132@kletech.ac.in
+    app.run()
