@@ -21,7 +21,7 @@ def open():
 def index(url,email):
      msg = Message(
                 'Hello user',
-                sender ='kletechseed_data@kletech.ac.in',
+                sender ='kletech_data@kletech.ac.in',
                 recipients = [email]
                )
      msg.body = 'Your consent has been attached with this mail.'
