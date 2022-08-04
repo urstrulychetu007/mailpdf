@@ -25,7 +25,7 @@ def index(url,email):
                 recipients = [email]
                )
      msg.body = 'Your consent has been attached with this mail.'
-     response = urllib.request.urlopen("http://10.2.0.23/uploads/Consents/"+url+".pdf")
+     response = urllib.request.urlopen("http://10.2.0.23:8080/uploads/Consents/"+url+".pdf")
      
      msg.attach(url+".pdf", "application/pdf", response.read()) 
      mail.send(msg)
@@ -33,4 +33,4 @@ def index(url,email):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run()_01fe19bcs125@kletech.ac.in1659619579164/01fe19bcs132@kletech.ac.in
