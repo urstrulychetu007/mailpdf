@@ -6,8 +6,8 @@ mail = Mail(app)
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'kletech_data@kletech.ac.in'
-app.config['MAIL_PASSWORD'] = 'kletech_data'
+app.config['MAIL_USERNAME'] = 'apsuser7@kletech.ac.in'
+app.config['MAIL_PASSWORD'] = 'Apsuser7'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
@@ -21,7 +21,7 @@ def open():
 def index(url,email):
      msg = Message(
                 'Hello user',
-                sender ='kletech_data@kletech.ac.in',
+                sender ='apsuser7@kletech.ac.in',
                 recipients = [email]
                )
      msg.body = 'Your consent has been attached with this mail.'
