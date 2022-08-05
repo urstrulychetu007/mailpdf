@@ -25,7 +25,7 @@ def index(url,email):
                 recipients = [email]
                )
      msg.body = 'Your consent has been attached with this mail.'
-     response = urllib.request.urlopen("http://10.2.0.23:8080/uploads/Consents/"+url+".pdf")
+     response = urllib.request.urlopen("http://210.212.192.31:8080/uploads/Consents/"+url+".pdf")
      
      msg.attach(url+".pdf", "application/pdf", response.read()) 
      mail.send(msg)
